@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  
 
   var superheroes= [
     'batman',
@@ -8,21 +9,26 @@ $(document).ready(function() {
     'spider-man',
     'wonder woman'];
 
-    for (var i = 0; i < superheroes.length; i++) {
-      // console.log(superheroes[i]);
-      $('.buttons').append('<button id="shbutton">'+superheroes[i]+'</button>'+' ') 
-    };
+  for (var i = 0; i < superheroes.length; i++) {
+    $('.buttons').append('<button class="shbutton" value='+superheroes[i]+'>'+superheroes[i]+'</button>'+' ');
+    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + superheroes[i] + "&api_key=puTf1GlvsIxLOd1CQI1eAzM62hQaWLKU&limit=10";
+  };
    
+    ///Get from Giphy API
+    
 
-
-    // $.ajax({
-    //   url: "http://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=puTf1GlvsIxLOd1CQI1eAzM62hQaWLKU&limit=10",
-    //   method: "GET"
-    // }).then(function(response) {
-
-    // }
-  
-  
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function(response) {
+    
+  })
+  $('#submit').on('click', function() {
+    ///add value in search img to array
+  })
+  $('.shbutton').on('click', function() {
+    console.log($(this).val());
+  })  
 })
 
 

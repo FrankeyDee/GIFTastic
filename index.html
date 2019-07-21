@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="styelsheet" href="/assets/css/stylesheet.css" />
 
     <title>GIF Tastic</title>
 </head>
 <body>
+    
+<div class="container">
     <header>
         <div class="buttons"></div>
     </header>
     <main>
-        <div class="results"></div>
-        <div class="search"></div>
+        <div class="row">
+            <div class="col-8">GIF Results Show Here</div>
+            <div class="col-4">
+                <input><button id="submit">Submit</btn></div>
+            </div>      
     </main>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="./assets/javascript/giftastic.js"></script>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="./assets/javascript/giftastic.js"></script>
 
 </body>
 </html>
