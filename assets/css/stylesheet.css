@@ -1,0 +1,14 @@
+header {
+    height: 150px;
+    position: relative;
+    padding-top: 20px;
+}
+
+main {
+    overflow: auto;
+    height: 600px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
