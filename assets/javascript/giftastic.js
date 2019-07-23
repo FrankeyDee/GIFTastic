@@ -42,6 +42,7 @@ $(document).ready(function() {
 				beginDiv.append(rate,img);
 				$(".col-8").append(beginDiv);
 
+
         $('.gif').on("click", function(){
           var state = $(this).attr("data-state");
           console.log($(this).attr('src'));
@@ -53,7 +54,6 @@ $(document).ready(function() {
               $(this).attr("data-state","still");
             }
         })
-
 
       }
     })    
