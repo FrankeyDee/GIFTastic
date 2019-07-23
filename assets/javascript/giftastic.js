@@ -42,17 +42,17 @@ $(document).ready(function() {
 				beginDiv.append(rate,img);
 				$(".col-8").append(beginDiv);
 
-        // $('.gif').on("click", function(){
-        //   var state = $(this).attr("data-state");
-        //   console.log($(this).attr('src'));
-        //   if (state === "still") {
-        //       $(this).attr("src", $(this).attr("data-animate"));
-        //       $(this).attr("data-state","animate");
-        //     } else {
-        //       $(this).attr("src",$(this).attr("data-still"));
-        //       $(this).attr("data-state","still");
-        //     }
-        });
+        $('.gif').on("click", function(){
+          var state = $(this).attr("data-state");
+          console.log($(this).attr('src'));
+          if (state === "still") {
+              $(this).attr("src", $(this).attr("data-animate"));
+              $(this).attr("data-state","animate");
+            } else {
+              $(this).attr("src",$(this).attr("data-still"));
+              $(this).attr("data-state","still");
+            }
+        })
 
 
       }
