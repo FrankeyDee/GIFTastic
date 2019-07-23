@@ -17,6 +17,13 @@ $(document).ready(function() {
   }
   renderButton();
 
+  ///take value of 'input' when you click on 'submit' and add to the array
+  $('button').on('click', function() {
+    console.log('hi!');
+  })
+
+
+
   //on click function to declare button value
   $('.button').on('click',function() {
     $(".col-8").empty();
