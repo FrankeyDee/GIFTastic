@@ -15,4 +15,8 @@ This project displays the use of multiple Javascript functions:
  
  <img src="./assets/images/gif2.gif"></img>
 
+Improvements:
+  - More styling overall (background, containers, buttons, etc.)
+  - More consistent calls. It seems that only every other GIF becomes animated when clicked on
+
 https://frankeydee.github.io/GIFTastic/
